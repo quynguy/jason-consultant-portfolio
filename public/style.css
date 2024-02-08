@@ -115,19 +115,18 @@ header .fa-bars {
     display: flex;
     align-items: center;
     min-height: 80vh;
-    background: url(images/Background.png) no-repeat;
+    background: url("https://i.ibb.co/BrXqr7Q/Untitled-design-7.png") no-repeat;
     background-size: cover;
-    background-position: center;
 }
 
 .home .content {
     font-size: 6rem;
-    color: #333;
+    color: #0f0e0e;
 }
 
 .home .content h3 {
     font-size: 5rem;
-    color: #333;
+    color: #0a0909;
 }
 
 .home .content span {
@@ -135,11 +134,12 @@ header .fa-bars {
     color: #94D1BE;
     padding: 1rem 0;
     line-height: 1.5;
+    font-weight: 700;
 }
 
 .home .content p {
     font-size: 1.5rem;
-    color: #999;
+    color: #333;
 
     padding: 1rem 0;
     line-height: 1.5;
@@ -153,6 +153,10 @@ header .fa-bars {
     flex-wrap: wrap;
     padding: 2rem 0;
     padding-bottom: 3rem;
+}
+
+.content span {
+    color: #94D1BE;
 }
 
 .about .row .image-container {
