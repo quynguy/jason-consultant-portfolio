@@ -1,72 +1,119 @@
 * {
-    box-sizing: border-box;
     margin: 0;
-    padding: 5px;
-    max-width: 1200px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
 }
 
-body {
-    margin: 0 auto;
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
 }
 
-/* header & nav container */
-div.header-container {
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background-color: #fff; */
+    padding: 2rem 9%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border: 2px dashed red;
+    justify-content: center;
+    /* z-index: 1000; */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .1);
 }
 
-div.header-logo {
+header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
     text-align: left;
 }
 
-nav a {
-    text-align: right;
-    text-decoration: none;
+header .nav-bar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
 }
 
-/* about container */
+header .nav-bar a:hover {
+    color: green;
+}
 
-div.about-container {
-    text-align: center;
-    height: 400px;
+header .icons a {
+    font-size: 3rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover {
+    color: lightgreen;
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: 333;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+
+/* section contents */
+
+.home {
     display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    width: 60%;
-    margin: 10rem auto 0 auto;
+    align-items: center;
+    min-height: 100vh;
 }
 
-div.about-heading h1 {
-    margin: 0;
+.home content {
+    font-size: 6rem;
+    color: #333;
 }
 
-div.about-heading img {
-    width: 350px;
-    height: auto;
+.home .content h3 {
+    font-size: 5rem;
+    color: #333;
 }
 
-
-/* div.about-left {
-    float: left;
+.home .content span {
+    font-size: 3.5rem;
+    padding: 1rem 0;
+    line-height: 1.5;
 }
 
-div.about-subheading h2 {
-    color: rgb(116, 99, 7);
+.home .content p {
+    font-size: 1.5rem;
+    color: #999;
+    padding: 1rem 0;
+    line-height: 1.5;
 }
 
-div.about-primary-text {
-    width: 600px;
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
 }
 
-
-div.about-right {
-    float: right;
+.btn:hover {
+    background: lightgreen;
 }
-
-div.about-image img {
-    width: 350px;
-    height: auto;
-} */
-

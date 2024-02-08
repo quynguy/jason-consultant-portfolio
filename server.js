@@ -9,7 +9,7 @@ const port = 1119;
 app.use(express.static(path.join(__dirname, 'public')));
 
 // routes
-app.get('/', (req, res) => {
+app.get('/home', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
